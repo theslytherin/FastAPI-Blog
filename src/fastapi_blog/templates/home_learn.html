@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+{% block content %}
+{# {% ... %} is used for statements such as loops.
+{{ ... }} is used to display values. #}
+{% for post in posts %}
+<h2>{{ post.title }}</h2>
+<p>{{ post.content }}</p>
+
+{% endfor %}
+<!--jinja2 let's us use dictionary keys with . -->
+{% endblock content %}

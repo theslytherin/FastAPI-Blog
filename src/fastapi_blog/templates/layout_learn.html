@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        {% if title %}
+        FastAPI Blog - {{ title }}
+        {% else %}
+        FastAPI Blog
+        {% endif %}
+    </title>
+</head>
+
+<body>
+
+    {% block content %}
+    {% endblock content %}
+    <!--jinja2 let's us use dictionary keys with . -->
+</body>
+
+</html>
